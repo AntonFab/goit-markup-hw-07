@@ -1,0 +1,15 @@
+.logo {
+  font-family: $logo-font;
+  color: $secondary-text-color;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  text-decoration: none;
+  transition: color $transition-duration $timing-function;
+
+  &-web,
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}

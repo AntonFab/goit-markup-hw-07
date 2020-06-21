@@ -1,0 +1,22 @@
+// General body styles
+
+body {
+  background-color: $primary-white-color;
+  color: $primary-text-color;
+  font-family: $main-font;
+  font-size: $main-font-size;
+  letter-spacing: $main-letter-spacing;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.container {
+  margin: 0 auto;
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
