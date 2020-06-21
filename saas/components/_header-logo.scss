@@ -7,9 +7,12 @@
   text-decoration: none;
   transition: color $transition-duration $timing-function;
 
-  &-web,
   &:hover,
   &:focus {
     color: $accent-color;
   }
+}
+
+.logo-web {
+  color: $accent-color;
 }

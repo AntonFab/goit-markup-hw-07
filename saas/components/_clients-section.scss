@@ -1,10 +1,10 @@
 .our-clients {
   display: flex;
   justify-content: center;
+}
 
-  & .item + .item {
-    margin-left: 30px;
-  }
+.our-clients .item + .item {
+  margin-left: 30px;
 }
 
 .client-logo {
