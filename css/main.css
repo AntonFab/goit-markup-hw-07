@@ -41,7 +41,7 @@ ul {
   padding-bottom: 94px;
 }
 
-@media screen and (min-width: 480px) and (min-width: 768px) {
+@media screen and (max-width: 1199px) {
   .section {
     padding-top: 60px;
     padding-bottom: 60px;
@@ -449,7 +449,32 @@ ul {
   background-color: #2196f3;
 }
 
-.our-clients .item + .item {
+.our-clients {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media screen and (max-width: 767px) {
+  .our-clients {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .our-clients .item:nth-child(2n + 1) {
+    margin-left: 0px;
+  }
+  .our-clients .item:nth-child(-n + 4) {
+    margin-bottom: 30px;
+  }
+}
+
+.our-clients .item {
   margin-left: 30px;
 }
 
@@ -493,10 +518,27 @@ ul {
   color: #ffffff;
 }
 
+@media screen and (max-width: 767px) {
+  .footer-logo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
 .address-item {
   font-size: 14px;
   line-height: 1.71;
   font-style: normal;
+}
+
+@media screen and (max-width: 767px) {
+  .address-item {
+    text-align: center;
+  }
 }
 
 .footer-contacts {
@@ -514,24 +556,34 @@ ul {
 }
 
 .footer-address {
-  padding-top: 48px;
+  padding-top: 60px;
 }
 
 .call-action {
-  padding-top: 56px;
-  padding-bottom: 56px;
-  margin-left: 69px;
+  padding-top: 60px;
 }
 
 .action-text {
   display: block;
   text-transform: uppercase;
   margin: 0;
-  margin-bottom: 21px;
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 767px) {
+  .action-text {
+    text-align: center;
+  }
 }
 
 .action-icons {
   display: inline-block;
+}
+
+@media screen and (max-width: 767px) {
+  .icons-list {
+    text-align: center;
+  }
 }
 
 .footer-icons {
@@ -568,6 +620,13 @@ ul {
   padding-bottom: 20px;
 }
 
+@media screen and (max-width: 767px) {
+  .subscription-title {
+    display: block;
+    text-align: center;
+  }
+}
+
 .subscription-input {
   width: 358px;
   padding-top: 15px;
@@ -579,6 +638,13 @@ ul {
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   color: #ffffff;
+}
+
+@media screen and (max-width: 767px) {
+  .subscription-input {
+    width: 100%;
+    margin-bottom: 20px;
+  }
 }
 
 .subscription-button {
@@ -599,6 +665,14 @@ ul {
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border: transparent;
+}
+
+@media screen and (max-width: 767px) {
+  .subscription-button {
+    margin-left: 0;
+    display: block;
+    text-align: center;
+  }
 }
 
 .subscription-icon {
