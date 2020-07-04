@@ -1,26 +1,18 @@
 .call-action {
-  padding-top: 60px;
+  padding-top: 56px;
+  padding-bottom: 56px;
+  margin-left: 69px;
 }
 
 .action-text {
   display: block;
   text-transform: uppercase;
   margin: 0;
-  margin-bottom: 20px;
-
-  @media screen and (max-width: 767px) {
-    text-align: center;
-  }
+  margin-bottom: 21px;
 }
 
 .action-icons {
   display: inline-block;
-}
-
-.icons-list {
-  @media screen and (max-width: 767px) {
-    text-align: center;
-  }
 }
 
 .footer-icons {

@@ -14,38 +14,14 @@ ul {
 
 .container {
   margin: 0 auto;
+  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
-}
-
-@media screen and (min-width: 480px) {
-  .container {
-    width: 480px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .container {
-    width: 768px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .container {
-    width: 1200px;
-  }
 }
 
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
-}
-
-@media screen and (max-width: 1199px) {
-  .section {
-    padding-top: 60px;
-    padding-bottom: 60px;
-  }
 }
 
 .section-title {
@@ -56,12 +32,6 @@ ul {
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
-}
-
-@media screen and (min-width: 480px) and (min-width: 768px) {
-  .section-title {
-    font-size: 28px;
-  }
 }
 
 .logo {
@@ -179,7 +149,7 @@ ul {
 
 .hero-section {
   max-width: 1600px;
-  max-height: 600px;
+  height: 600px;
   margin-left: auto;
   margin-right: auto;
   background-size: cover;
@@ -190,29 +160,9 @@ ul {
   text-align: center;
 }
 
-@media screen and (min-width: 480px) {
-  .hero-section {
-    max-width: 480px;
-    max-height: 400px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .hero-section {
-    max-width: 768px;
-    max-height: 400px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .hero-section {
-    width: 1600px;
-  }
-}
-
 .hero-title {
   margin-top: 0px;
-  margin-bottom: 30px;
+  margin-bottom: 46px;
   margin-left: auto;
   margin-right: auto;
   padding-top: 200px;
@@ -225,13 +175,10 @@ ul {
   text-transform: uppercase;
 }
 
-@media screen and (min-width: 480px) and (max-width: 1200px) {
-  .hero-title {
-    font-size: 26px;
-    line-height: 1.62;
-    padding-top: 118px;
-    width: 360px;
-  }
+.advantages-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .advantages-list .title {
@@ -241,23 +188,6 @@ ul {
   font-weight: 700;
   line-height: 1.14;
   text-transform: uppercase;
-}
-
-@media screen and (min-width: 480px) {
-  .advantages-list .title {
-    text-align: center;
-  }
-}
-
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  clip: rect(0 0 0 0);
-  overflow: hidden;
 }
 
 .advantages-list .text {
@@ -270,21 +200,8 @@ ul {
   width: 270px;
 }
 
-@media screen and (min-width: 480px) {
-  .advantages-list .item {
-    width: auto;
-  }
-}
-
-.advantages-list .item:not(:last-child) {
+.advantages-list .item + .item {
   margin-left: 30px;
-}
-
-@media screen and (min-width: 480px) {
-  .advantages-list .item:not(:last-child) {
-    margin-left: 0;
-    margin-bottom: 30px;
-  }
 }
 
 .adv-icons {
@@ -296,23 +213,10 @@ ul {
   border-radius: 4px;
 }
 
-@media screen and (min-width: 480px) {
-  .adv-icons {
-    width: 450px;
-    padding: 25px 190px;
-  }
-}
-
 .we-do {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-}
-
-@media screen and (max-width: 767px) {
-  .display-none {
-    display: none;
-  }
 }
 
 .item-do {
@@ -354,6 +258,12 @@ ul {
   background-color: rgba(47, 48, 58, 0.8);
 }
 
+.team {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .our-team {
   background-color: #f5f4fa;
 }
@@ -366,24 +276,8 @@ ul {
   width: 270px;
 }
 
-@media screen and (min-width: 480px) {
-  .item-team {
-    width: auto;
-  }
-}
-
-.item-team:not(:last-child) {
-  margin-bottom: 30px;
-}
-
 .item-team + .item-team {
   margin-left: 30px;
-}
-
-@media screen and (min-width: 480px) {
-  .item-team + .item-team {
-    margin-left: 0;
-  }
 }
 
 .worker {
@@ -453,28 +347,12 @@ ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-@media screen and (max-width: 767px) {
-  .our-clients {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  .our-clients .item:nth-child(2n + 1) {
-    margin-left: 0px;
-  }
-  .our-clients .item:nth-child(-n + 4) {
-    margin-bottom: 30px;
-  }
-}
-
-.our-clients .item {
+.our-clients .item + .item {
   margin-left: 30px;
 }
 
@@ -508,6 +386,12 @@ ul {
   background-color: #2f303a;
 }
 
+.footer > .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .footer-logo {
   display: block;
   font-weight: 700;
@@ -518,27 +402,10 @@ ul {
   color: #ffffff;
 }
 
-@media screen and (max-width: 767px) {
-  .footer-logo {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-}
-
 .address-item {
   font-size: 14px;
   line-height: 1.71;
   font-style: normal;
-}
-
-@media screen and (max-width: 767px) {
-  .address-item {
-    text-align: center;
-  }
 }
 
 .footer-contacts {
@@ -556,34 +423,24 @@ ul {
 }
 
 .footer-address {
-  padding-top: 60px;
+  padding-top: 48px;
 }
 
 .call-action {
-  padding-top: 60px;
+  padding-top: 56px;
+  padding-bottom: 56px;
+  margin-left: 69px;
 }
 
 .action-text {
   display: block;
   text-transform: uppercase;
   margin: 0;
-  margin-bottom: 20px;
-}
-
-@media screen and (max-width: 767px) {
-  .action-text {
-    text-align: center;
-  }
+  margin-bottom: 21px;
 }
 
 .action-icons {
   display: inline-block;
-}
-
-@media screen and (max-width: 767px) {
-  .icons-list {
-    text-align: center;
-  }
 }
 
 .footer-icons {
@@ -620,13 +477,6 @@ ul {
   padding-bottom: 20px;
 }
 
-@media screen and (max-width: 767px) {
-  .subscription-title {
-    display: block;
-    text-align: center;
-  }
-}
-
 .subscription-input {
   width: 358px;
   padding-top: 15px;
@@ -638,13 +488,6 @@ ul {
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   color: #ffffff;
-}
-
-@media screen and (max-width: 767px) {
-  .subscription-input {
-    width: 100%;
-    margin-bottom: 20px;
-  }
 }
 
 .subscription-button {
@@ -665,14 +508,6 @@ ul {
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border: transparent;
-}
-
-@media screen and (max-width: 767px) {
-  .subscription-button {
-    margin-left: 0;
-    display: block;
-    text-align: center;
-  }
 }
 
 .subscription-icon {

@@ -2,10 +2,6 @@
   font-size: 14px;
   line-height: 1.71;
   font-style: normal;
-
-  @media screen and (max-width: $max-mobile) {
-    text-align: center;
-  }
 }
 
 .footer-contacts {
@@ -23,5 +19,5 @@
 }
 
 .footer-address {
-  padding-top: 60px;
+  padding-top: 48px;
 }
